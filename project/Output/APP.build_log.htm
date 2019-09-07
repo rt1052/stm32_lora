@@ -27,7 +27,28 @@ Project File Date:  05/27/2019
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'APP'
-".\Output\APP.axf" - 0 Error(s), 0 Warning(s).
+compiling app.c...
+..\app\app.c(20): warning:  #223-D: function "key_get" declared implicitly
+  	sys_ctrl.switch_state = key_get();
+..\app\app.c(30): warning:  #223-D: function "relay_ctrl" declared implicitly
+  				relay_ctrl(sys_ctrl.relay_state);
+..\app\app.c(31): warning:  #223-D: function "led_ctrl" declared implicitly
+  				led_ctrl(sys_ctrl.relay_state);
+..\app\app.c(32): warning:  #223-D: function "lora_send" declared implicitly
+  				lora_send(0, 0x0, SET_RELAY_NOTICE, &sys_ctrl.relay_state, 1);
+..\app\app.c(49): warning:  #223-D: function "dht11_read_data" declared implicitly
+  		dht11_read_data(sys_ctrl.dht11_buf);	
+..\app\app.c(69): warning:  #223-D: function "relay_ctrl" declared implicitly
+  					relay_ctrl(sys_ctrl.relay_state);
+..\app\app.c(70): warning:  #223-D: function "led_ctrl" declared implicitly
+  					led_ctrl(sys_ctrl.relay_state);
+..\app\app.c(71): warning:  #223-D: function "lora_send" declared implicitly
+  					lora_send(0, 0x0, SET_RELAY_NOTICE, &sys_ctrl.relay_state, 1);
+..\app\app.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=29796 RO-data=728 RW-data=236 ZI-data=9108  
+FromELF: creating hex file...
+".\Output\APP.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -45,7 +66,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

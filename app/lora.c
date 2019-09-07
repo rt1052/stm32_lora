@@ -4,7 +4,7 @@
 #include "bsp.h"
 
 
-#define SYS_ID  0X2
+#define SYS_ID  0X4
 
 
 void lora_send(uint8_t port, uint8_t id, uint8_t cmd, uint8_t *dat, uint8_t cnt)

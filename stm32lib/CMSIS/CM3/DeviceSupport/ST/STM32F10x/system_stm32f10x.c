@@ -216,6 +216,7 @@ void SystemInit (void)
 
 	RCC->CFGR |= (uint32_t)RCC_CFGR_PLLSRC_HSI_Div2;
 
+	/* ÏµÍ³Ê±ÖÓ40Mhz */
 	RCC->CFGR |= (uint32_t)RCC_CFGR_PLLMULL10;  // 13
 
 	RCC->CFGR |= (uint32_t)RCC_CFGR_HPRE_DIV1;
