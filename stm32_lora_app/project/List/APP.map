@@ -1,0 +1,222 @@
+Component: ARM Compiler 5.06 update 3 (build 300) Tool: armlink [4d35c9]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text) refers to os_task.o(.text) for OSTaskCreate
+    main.o(.text) refers to os_q.o(.text) for OSQCreate
+    main.o(.text) refers to bsp.o(.text) for bsp_init
+    main.o(.text) refers to os_core.o(.text) for OSInit
+    main.o(.text) refers to main.o(.bss) for .bss
+    main.o(.text) refers to app.o(.text) for task_led
+    main.o(.text) refers to lora.o(.text) for task_lora
+    main.o(.text) refers to ctrl.o(.text) for task_ctrl
+    main.o(.text) refers to main.o(.data) for .data
+    stm32f10x_it.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    stm32f10x_it.o(.text) refers to os_core.o(.text) for OSTimeTick
+    stm32f10x_it.o(.text) refers to stm32f10x_tim.o(.text) for TIM_GetITStatus
+    stm32f10x_it.o(.text) refers to stm32f10x_exti.o(.text) for EXTI_GetITStatus
+    stm32f10x_it.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_ReadInputDataBit
+    stm32f10x_it.o(.text) refers to os_core.o(.data) for OSIntNesting
+    stm32f10x_it.o(.text) refers to stm32f10x_it.o(.data) for .data
+    app.o(.text) refers to bsp.o(.text) for key_get
+    app.o(.text) refers to lora.o(.text) for lora_send
+    app.o(.text) refers to os_time.o(.text) for OSTimeDly
+    app.o(.text) refers to dht11.o(.text) for dht11_read_data
+    app.o(.text) refers to ctrl.o(.bss) for sys_ctrl
+    app.o(.text) refers to stm32f10x_it.o(.data) for dat_ready
+    ctrl.o(.text) refers to os_q.o(.text) for OSQPend
+    ctrl.o(.text) refers to bsp.o(.text) for relay_ctrl
+    ctrl.o(.text) refers to lora.o(.text) for lora_send
+    ctrl.o(.text) refers to os_time.o(.text) for OSTimeDly
+    ctrl.o(.text) refers to main.o(.data) for lora_q
+    ctrl.o(.text) refers to ctrl.o(.bss) for .bss
+    lora.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    lora.o(.text) refers to app.o(.text) for check_sum
+    lora.o(.text) refers to sx1276.o(.text) for SX1276SetTxPacket
+    lora.o(.text) refers to os_time.o(.text) for OSTimeDly
+    lora.o(.text) refers to os_q.o(.text) for OSQPost
+    lora.o(.text) refers to ctrl.o(.bss) for sys_ctrl
+    lora.o(.text) refers to main.o(.data) for lora_q
+    bsp.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_WriteBit
+    bsp.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_GetClocksFreq
+    bsp.o(.text) refers to stm32f10x_tim.o(.text) for TIM_TimeBaseStructInit
+    bsp.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    bsp.o(.text) refers to stm32f10x_exti.o(.text) for EXTI_Init
+    bsp.o(.text) refers to spi.o(.text) for spi1_init
+    usart.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    usart.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    usart.o(.text) refers to stm32f10x_usart.o(.text) for USART_Init
+    spi.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphClockCmd
+    spi.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    spi.o(.text) refers to stm32f10x_spi.o(.text) for SPI_Init
+    dht11.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    dht11.o(.text) refers to bsp.o(.text) for delay_us
+    dht11.o(.text) refers to app.o(.text) for check_sum
+    system_stm32f10x.o(.text) refers to system_stm32f10x.o(.data) for .data
+    stm32f10x_pwr.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_rcc.o(.text) refers to stm32f10x_rcc.o(.data) for .data
+    stm32f10x_spi.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_tim.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_usart.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_adc.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_bkp.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_BackupResetCmd
+    stm32f10x_dac.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f10x_gpio.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f10x_i2c.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(.text) for Reset_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(.text) for NMI_Handler
+    startup_stm32f10x_md.o(RESET) refers to os_cpu_a.o(.text) for OS_CPU_PendSVHandler
+    startup_stm32f10x_md.o(.text) refers to system_stm32f10x.o(.text) for SystemInit
+    startup_stm32f10x_md.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    radio.o(.text) refers to radio.o(.bss) for .bss
+    sx1276.o(.text) refers to sx1276-lora.o(.text) for SX1276LoRaSetOpMode
+    sx1276.o(.text) refers to sx1276-hal.o(.text) for SX1276Write
+    sx1276.o(.text) refers to os_time.o(.text) for OSTimeDly
+    sx1276.o(.text) refers to sx1276.o(.data) for .data
+    sx1276.o(.text) refers to sx1276-lora.o(.data) for SX1276LR
+    sx1276.o(.text) refers to sx1276.o(.bss) for .bss
+    sx1276-hal.o(.text) refers to stm32f10x_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    sx1276-hal.o(.text) refers to stm32f10x_gpio.o(.text) for GPIO_Init
+    sx1276-hal.o(.text) refers to spi.o(.text) for spi_read_write_byte
+    sx1276-lora.o(.text) refers to sx1276-hal.o(.text) for SX1276Write
+    sx1276-lora.o(.text) refers to sx1276-loramisc.o(.text) for SX1276LoRaSetRFFrequency
+    sx1276-lora.o(.text) refers to os_time.o(.text) for OSTimeDly
+    sx1276-lora.o(.text) refers to dfltui.o(.text) for __aeabi_ui2d
+    sx1276-lora.o(.text) refers to dadd.o(.text) for __aeabi_dadd
+    sx1276-lora.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    sx1276-lora.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    sx1276-lora.o(.text) refers to dflti.o(.text) for __aeabi_i2d
+    sx1276-lora.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    sx1276-lora.o(.text) refers to sx1276-lora.o(.data) for .data
+    sx1276-lora.o(.text) refers to sx1276.o(.bss) for SX1276Regs
+    sx1276-lora.o(.text) refers to sx1276-lora.o(.bss) for .bss
+    sx1276-lora.o(.text) refers to sx1276-lora.o(.constdata) for .constdata
+    sx1276-loramisc.o(.text) refers to dfltui.o(.text) for __aeabi_ui2d
+    sx1276-loramisc.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    sx1276-loramisc.o(.text) refers to dfixui.o(.text) for __aeabi_d2uiz
+    sx1276-loramisc.o(.text) refers to sx1276-hal.o(.text) for SX1276WriteBuffer
+    sx1276-loramisc.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    sx1276-loramisc.o(.text) refers to sx1276-lora.o(.data) for LoRaSettings
+    os_cpu_a.o(.text) refers to os_core.o(.data) for OSRunning
+    os_cpu_a.o(.text) refers to os_cpu_c.o(.text) for OSTaskSwHook
+    os_cpu_c.o(.text) refers to os_tmr.o(.text) for OSTmrSignal
+    os_cpu_c.o(.text) refers to os_cpu_c.o(.data) for .data
+    os_core.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_core.o(.text) refers to os_task.o(.text) for OSTaskStkChk
+    os_core.o(.text) refers to os_time.o(.text) for OSTimeDly
+    os_core.o(.text) refers to os_cpu_c.o(.text) for OSTaskStatHook
+    os_core.o(.text) refers to os_core.o(.data) for .data
+    os_core.o(.text) refers to os_core.o(.bss) for .bss
+    os_core.o(.text) refers to os_flag.o(.text) for OS_FlagInit
+    os_core.o(.text) refers to os_mem.o(.text) for OS_MemInit
+    os_core.o(.text) refers to os_q.o(.text) for OS_QInit
+    os_core.o(.text) refers to os_tmr.o(.text) for OSTmr_Init
+    os_core.o(.text) refers to os_core.o(.constdata) for .constdata
+    os_flag.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_flag.o(.text) refers to os_core.o(.text) for OS_Sched
+    os_flag.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_flag.o(.text) refers to os_core.o(.data) for OSFlagFreeList
+    os_flag.o(.text) refers to os_core.o(.bss) for OSFlagTbl
+    os_mbox.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_mbox.o(.text) refers to os_core.o(.text) for OS_EventWaitListInit
+    os_mbox.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_mem.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_mem.o(.text) refers to os_core.o(.text) for OS_StrCopy
+    os_mem.o(.text) refers to os_core.o(.data) for OSMemFreeList
+    os_mem.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_mem.o(.text) refers to os_core.o(.bss) for OSMemTbl
+    os_mutex.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_mutex.o(.text) refers to os_core.o(.text) for OS_EventWaitListInit
+    os_mutex.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_mutex.o(.text) refers to os_core.o(.bss) for OSTCBPrioTbl
+    os_q.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_q.o(.text) refers to os_core.o(.text) for OS_EventWaitListInit
+    os_q.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_q.o(.text) refers to os_core.o(.data) for OSQFreeList
+    os_q.o(.text) refers to os_core.o(.bss) for OSQTbl
+    os_sem.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_sem.o(.text) refers to os_core.o(.text) for OS_EventWaitListInit
+    os_sem.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_task.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_task.o(.text) refers to os_core.o(.text) for OS_Sched
+    os_task.o(.text) refers to os_cpu_c.o(.text) for OSTaskStkInit
+    os_task.o(.text) refers to os_flag.o(.text) for OS_FlagUnlink
+    os_task.o(.text) refers to os_core.o(.bss) for OSTCBPrioTbl
+    os_task.o(.text) refers to os_core.o(.data) for OSTCBCur
+    os_time.o(.text) refers to os_cpu_a.o(.text) for OS_CPU_SR_Save
+    os_time.o(.text) refers to os_core.o(.text) for OS_Sched
+    os_time.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_time.o(.text) refers to os_core.o(.bss) for OSTCBPrioTbl
+    os_tmr.o(.text) refers to os_core.o(.text) for OS_StrLen
+    os_tmr.o(.text) refers to os_core.o(.data) for OSIntNesting
+    os_tmr.o(.text) refers to os_core.o(.data) for OSTmrFreeList
+    os_tmr.o(.text) refers to os_core.o(.data) for OSTmrUsed
+    os_tmr.o(.text) refers to os_core.o(.data) for OSTmrFree
+    os_tmr.o(.text) refers to os_core.o(.bss) for OSTmrWheelTbl
+    os_tmr.o(.text) refers to os_core.o(.data) for OSTmrTime
+    os_tmr.o(.text) refers to os_sem.o(.text) for OSSemPost
+    os_tmr.o(.text) refers to os_task.o(.text) for OSTaskCreateExt
+    os_tmr.o(.text) refers to os_core.o(.data) for OSTmrSemSignal
+    os_tmr.o(.text) refers to os_core.o(.bss) for OSTmrTbl
+    os_tmr.o(.text) refers to os_core.o(.data) for OSTmrSem
+    os_tmr.o(.text) refers to os_core.o(.bss) for OSTmrTaskStk
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.data), (4 bytes).
+    Removing usart.o(.text), (184 bytes).
+    Removing core_cm3.o(.emb_text), (32 bytes).
+    Removing stm32f10x_pwr.o(.text), (172 bytes).
+    Removing stm32f10x_rtc.o(.text), (272 bytes).
+    Removing stm32f10x_usart.o(.text), (808 bytes).
+    Removing stm32f10x_adc.o(.text), (816 bytes).
+    Removing stm32f10x_bkp.o(.text), (152 bytes).
+    Removing stm32f10x_dac.o(.text), (252 bytes).
+    Removing stm32f10x_dma.o(.text), (456 bytes).
+    Removing stm32f10x_i2c.o(.text), (808 bytes).
+    Removing startup_stm32f10x_md.o(HEAP), (512 bytes).
+    Removing fifo.o(.text), (128 bytes).
+    Removing radio.o(.text), (8 bytes).
+    Removing radio.o(.bss), (24 bytes).
+    Removing os_dbg.o(.constdata), (2 bytes).
+    Removing os_mbox.o(.text), (928 bytes).
+    Removing os_mutex.o(.text), (1368 bytes).
+
+18 unused section(s) (total 6926 bytes) removed from the image.

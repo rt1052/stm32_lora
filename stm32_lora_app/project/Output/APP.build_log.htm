@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yuheng yuheng, yuheng, LIC=FYKNN-YASTI-T3JMI-T4LBY-9CMLZ-W6JW6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+D:\code\stm32f103c8t6\stm32_lora\project\APP.uvprojx
+Project File Date:  12/01/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'APP'
+compiling main.c...
+..\User\main.c(8): warning:  #177-D: variable "task_dht11_stk" was declared but never referenced
+  static OS_STK task_dht11_stk[TASK_DHT11_STK_SIZE];
+..\User\main.c: 1 warning, 0 errors
+linking...
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching lora.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching sx1276-hal.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching app.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching os_core.o(.constdata).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching stm32f10x_it.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching stm32f10x_exti.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching dmul.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching ddiv.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching sx1276.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching sx1276-lora.o(.constdata).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching depilogue.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching misc.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching os_cpu_c.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching os_cpu_a.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching ctrl.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfixui.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f10x_md.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching memcpya.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching llsshr.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching dflti.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching llushr.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching llshl.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfltui.o(.text).
+.\Output\APP.axf: Error: L6406E: No space in execution regions with .ANY selector matching iusefp.o(.text).
+.\Output\APP.axf: Error: L6407E: Sections of aggregate size 0xe60 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 27 error messages.
+".\Output\APP.axf" - 27 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\code\stm32f103c8t6\stm32_lora\project\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
