@@ -9,6 +9,7 @@
 .\output\stm32f10x_tim.o: ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\output\stm32f10x_tim.o: ..\stm32lib\Libraries\inc\stm32f10x_dma.h
 .\output\stm32f10x_tim.o: ..\stm32lib\Libraries\inc\stm32f10x_exti.h
+.\output\stm32f10x_tim.o: ..\stm32lib\Libraries\inc\stm32f10x_flash.h
 .\output\stm32f10x_tim.o: ..\stm32lib\Libraries\inc\stm32f10x_gpio.h
 .\output\stm32f10x_tim.o: ..\stm32lib\Libraries\inc\stm32f10x_pwr.h
 .\output\stm32f10x_tim.o: ..\stm32lib\Libraries\inc\stm32f10x_rcc.h

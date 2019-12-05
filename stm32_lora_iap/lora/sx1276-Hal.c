@@ -82,9 +82,9 @@ void SX1276WriteBuffer( uint8_t addr, uint8_t *buffer, uint8_t size)
 	
     GPIO_ResetBits(NSS_IOPORT, NSS_PIN);
     
-    spi_read_write_byte( addr | 0x80 );
+    spi_rw_byte( addr | 0x80 );
     for (i = 0; i < size; i++ ) {
-        spi_read_write_byte(buffer[i]);
+        spi_rw_byte(buffer[i]);
     }
     
     GPIO_SetBits(NSS_IOPORT, NSS_PIN);
@@ -96,11 +96,11 @@ void SX1276ReadBuffer( uint8_t addr, uint8_t *buffer, uint8_t size )
 
     GPIO_ResetBits(NSS_IOPORT, NSS_PIN);
 
-    spi_read_write_byte( addr & 0x7F );
+    spi_rw_byte( addr & 0x7F );
 
     for( i = 0; i < size; i++ )
     {
-        buffer[i] = spi_read_write_byte( 0 );
+        buffer[i] = spi_rw_byte( 0 );
     }
 
     GPIO_SetBits(NSS_IOPORT, NSS_PIN);

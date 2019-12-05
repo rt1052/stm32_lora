@@ -11,6 +11,7 @@
 .\output\sx1276-lora.o: ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\output\sx1276-lora.o: ..\stm32lib\Libraries\inc\stm32f10x_dma.h
 .\output\sx1276-lora.o: ..\stm32lib\Libraries\inc\stm32f10x_exti.h
+.\output\sx1276-lora.o: ..\stm32lib\Libraries\inc\stm32f10x_flash.h
 .\output\sx1276-lora.o: ..\stm32lib\Libraries\inc\stm32f10x_gpio.h
 .\output\sx1276-lora.o: ..\stm32lib\Libraries\inc\stm32f10x_pwr.h
 .\output\sx1276-lora.o: ..\stm32lib\Libraries\inc\stm32f10x_rcc.h
@@ -24,4 +25,3 @@
 .\output\sx1276-lora.o: ..\lora\sx1276-LoRaMisc.h
 .\output\sx1276-lora.o: ..\lora\sx1276-LoRa.h
 .\output\sx1276-lora.o: ..\bsp\bsp.h
-.\output\sx1276-lora.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

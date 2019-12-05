@@ -35,6 +35,8 @@ void task_ctrl(void *p_arg)
 				break;
 			
 			case UPDATE_START_REQUEST:
+				param.update = true;
+				flash_set_param(&param);
 				NVIC_SystemReset();
 				break;
 		}

@@ -1,4 +1,5 @@
 #include "bsp.h"
+#include <stdio.h>
 
 void usart1_init(void)
 {

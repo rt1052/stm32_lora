@@ -9,6 +9,7 @@
 .\output\misc.o: ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\output\misc.o: ..\stm32lib\Libraries\inc\stm32f10x_dma.h
 .\output\misc.o: ..\stm32lib\Libraries\inc\stm32f10x_exti.h
+.\output\misc.o: ..\stm32lib\Libraries\inc\stm32f10x_flash.h
 .\output\misc.o: ..\stm32lib\Libraries\inc\stm32f10x_gpio.h
 .\output\misc.o: ..\stm32lib\Libraries\inc\stm32f10x_pwr.h
 .\output\misc.o: ..\stm32lib\Libraries\inc\stm32f10x_rcc.h

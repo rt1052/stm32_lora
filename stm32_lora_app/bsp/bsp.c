@@ -140,6 +140,18 @@ void exit_init(void)
 	EXTI_Init(&EXTI_InitStructure);
 }
 
+void flash_set_param(param_t *param)
+{
+	FLASH_Unlock();
+	FLASH_ProgramWord(FLASH_PARAM, *(uint32_t *)param);
+	FLASH_Lock();
+}
+
+param_t flash_get_param(void)
+{
+	return (*(param_t *)FLASH_PARAM);
+}
+
 void bsp_init(void)
 {	
 	nvic_init();

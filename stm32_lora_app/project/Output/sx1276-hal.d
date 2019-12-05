@@ -10,6 +10,7 @@
 .\output\sx1276-hal.o: ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\output\sx1276-hal.o: ..\stm32lib\Libraries\inc\stm32f10x_dma.h
 .\output\sx1276-hal.o: ..\stm32lib\Libraries\inc\stm32f10x_exti.h
+.\output\sx1276-hal.o: ..\stm32lib\Libraries\inc\stm32f10x_flash.h
 .\output\sx1276-hal.o: ..\stm32lib\Libraries\inc\stm32f10x_gpio.h
 .\output\sx1276-hal.o: ..\stm32lib\Libraries\inc\stm32f10x_pwr.h
 .\output\sx1276-hal.o: ..\stm32lib\Libraries\inc\stm32f10x_rcc.h
