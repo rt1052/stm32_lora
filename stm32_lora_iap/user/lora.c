@@ -25,17 +25,21 @@ void lora_init(void)
     SX1276StartRx();
 }
 
-void lora_send(uint8_t port, uint8_t id, uint8_t cmd, uint8_t dat)
+/**
+ * @dat: 数据指针
+ * @dat_len: 数据长度
+ */
+void lora_send(uint8_t port, uint8_t id, uint8_t cmd, uint8_t *dat, uint8_t dat_len)
 {
 	uint8_t buf[64];
-	uint8_t len = 6;
+	uint8_t len = 5 + dat_len;
 	
 	buf[0] = 0x42;
 	buf[1] = len;
 	buf[2] = port;
 	buf[3] = sys.param.id;
 	buf[4] = cmd;
-	buf[5] = dat;
+	memcpy(buf+5, dat, dat_len);
 	buf[len] = check_sum(buf, len);
 	
 	SX1276SetTxPacket(buf, len+1);	

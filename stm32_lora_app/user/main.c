@@ -19,10 +19,10 @@ param_t param;
 
 int main(void)
 {	
-	SCB->VTOR = 0x08003000;
+	SCB->VTOR = 0x08004000;
 	
 	param = flash_get_param();
-	if (param.update = true) {
+	if (param.update == true) {
 		param.update = false;
 		flash_set_param(&param);
 	}

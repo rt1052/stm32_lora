@@ -143,6 +143,7 @@ void exit_init(void)
 void flash_set_param(param_t *param)
 {
 	FLASH_Unlock();
+	FLASH_ErasePage(FLASH_PARAM);	
 	FLASH_ProgramWord(FLASH_PARAM, *(uint32_t *)param);
 	FLASH_Lock();
 }

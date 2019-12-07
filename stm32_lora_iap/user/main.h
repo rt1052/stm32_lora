@@ -9,13 +9,14 @@
 #include "stm32f10x.h"
 #include "stm32f10x_conf.h"
 
-/* flash分区起始地址 */
-#define FLASH_BOOT   0x8000000
-#define FLASH_PARAM  0x8002C00
-#define FLASH_APP    0x8003000
+/* flash分区起始地址，共64页 */
+#define FLASH_BOOT   0x8000000   // 15页
+#define FLASH_PARAM  0x8003C00   // 1页
+#define FLASH_APP    0x8004000   // 48页
+#define FLASH_END    0x8010000
 
 #define PAGE_SIZE     0x400
-#define APP_PAGE_NUM  26
+#define APP_PAGE_NUM  48
 
 
 typedef struct {

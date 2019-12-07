@@ -24,13 +24,15 @@ typedef struct {
 	uint8_t port;
 	uint8_t id;
     uint8_t cmd;
-    uint8_t dat[101];
+    /* 更新命令专用格式 */
+    uint8_t cnt[2];
+    uint8_t dat[100];
 } frame_t;
 
 
 void lora_init(void);
 frame_t *lora_recv(void);
-void lora_send(uint8_t port, uint8_t id, uint8_t cmd, uint8_t dat);
+void lora_send(uint8_t port, uint8_t id, uint8_t cmd, uint8_t *dat, uint8_t dat_len);
 
 
 #endif

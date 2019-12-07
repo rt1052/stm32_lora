@@ -22,6 +22,7 @@ sys_t sys;
 void flash_set_param(param_t *param)
 {
 	FLASH_Unlock();
+	FLASH_ErasePage(FLASH_PARAM);
 	FLASH_ProgramWord(FLASH_PARAM, *(uint32_t *)param);
 	FLASH_Lock();
 }
@@ -44,6 +45,10 @@ void flash_erase(void)
 
 void flash_write(uint32_t addr, uint8_t *buf, uint8_t len)
 {
+	if (len % 4 || (addr+len) > FLASH_END) {
+		return;
+	}
+
 	sys.erase = false;
 	for (uint8_t i = 0; i < len; i += 4) {
 		FLASH_ProgramWord(addr + i, *(uint32_t *)(buf + i));
@@ -67,7 +72,7 @@ void jump_app(void)
 
 void update_app(void)
 {
-	int16_t update_cnt = 0;
+	uint16_t update_cnt = 0;
 	uint8_t wait_cnt = 10;
 	uint32_t update_addr;
 
@@ -83,15 +88,15 @@ void update_app(void)
     			sys.port = frame->port;
     			FLASH_Unlock();
     			flash_erase();
-    			lora_send(sys.port, frame->id, UPDATE_DATA_REQUEST, update_cnt);    				
+    			lora_send(sys.port, frame->id, UPDATE_DATA_REQUEST, (uint8_t *)&update_cnt, 2);    				
     			break;
     		case UPDATE_DATA_RESPONSE:
-    			if (frame->dat[0] == update_cnt
-    				&& sys.port == frame->port) {
+    			if (*(uint16_t *)frame->cnt == update_cnt
+    				&& frame->port == sys.port) {
 
     				wait_cnt = 0;
-    				uint8_t update_len = frame->len - 6;
-    				flash_write(update_addr, &frame->dat[1], update_len);
+    				uint8_t update_len = frame->len - 7;
+    				flash_write(update_addr, frame->dat, update_len);
     				update_addr += update_len;  					
     				update_cnt++;
 					/* 如果是最后一帧则跳转到应用程序 */
@@ -99,20 +104,21 @@ void update_app(void)
 						FLASH_Lock();
 						jump_app();
 					} else {
-						lora_send(sys.port, sys.param.id, UPDATE_DATA_REQUEST, update_cnt);
+						lora_send(sys.port, sys.param.id, UPDATE_DATA_REQUEST, (uint8_t *)&update_cnt, 2);
 					}
     			}
     			break;
     		case GET_RELAY_REQUEST:
     			/* oxff表示需要更新 */
-    			lora_send(sys.port, sys.param.id, GET_RELAY_RESPONSE, 0xff);
+    			uint8_t state = 0xff;
+    			lora_send(sys.port, sys.param.id, GET_RELAY_RESPONSE, &state, 1);
     			break;
 			}
     	} else {
     		if (++wait_cnt > 10) {
     			wait_cnt = 10;
     		} else {
-    			lora_send(sys.port, sys.param.id, UPDATE_DATA_REQUEST, update_cnt);
+    			lora_send(sys.port, sys.param.id, UPDATE_DATA_REQUEST, (uint8_t *)&update_cnt, 2);
     		}
     	}								
     }
@@ -121,7 +127,7 @@ void update_app(void)
 int main(void)
 {
 	/* 首次烧录 */
-#if 1	
+#if 0
 	sys.param.update = true;
 	sys.param.id = 1;
 	flash_set_param(&sys.param);
