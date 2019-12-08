@@ -12,7 +12,7 @@ uint8_t check_sum(uint8_t *buf, uint16_t len)
     return sum;        
 }
 
-void task_led(void *p_arg)
+void task_key(void *p_arg)
 {
 	uint8_t cnt;
 	(void)p_arg;

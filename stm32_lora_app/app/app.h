@@ -43,7 +43,7 @@ extern ctrl_t sys_ctrl;
 
 uint8_t check_sum(uint8_t *buf, uint16_t len);
 
-void task_led(void *p_arg);
+void task_key(void *p_arg);
 void task_dht11(void *p_arg);
 void task_lora(void *p_arg);
 void task_ctrl(void *p_arg);

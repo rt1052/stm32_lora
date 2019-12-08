@@ -27,23 +27,85 @@ Project File Date:  12/07/2019
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'APP'
+compiling app.c...
+..\app\app.c(20): warning:  #223-D: function "key_get" declared implicitly
+  	sys_ctrl.switch_state = key_get();
+..\app\app.c(30): warning:  #223-D: function "relay_ctrl" declared implicitly
+  				relay_ctrl(sys_ctrl.relay_state);
+..\app\app.c(31): warning:  #223-D: function "led_ctrl" declared implicitly
+  				led_ctrl(sys_ctrl.relay_state);
+..\app\app.c(32): warning:  #223-D: function "lora_send" declared implicitly
+  				lora_send(0, 0x0, SET_RELAY_NOTICE, &sys_ctrl.relay_state, 1);
+..\app\app.c(49): warning:  #223-D: function "dht11_read_data" declared implicitly
+  		dht11_read_data(sys_ctrl.dht11_buf);	
+..\app\app.c(69): warning:  #223-D: function "relay_ctrl" declared implicitly
+  					relay_ctrl(sys_ctrl.relay_state);
+..\app\app.c(70): warning:  #223-D: function "led_ctrl" declared implicitly
+  					led_ctrl(sys_ctrl.relay_state);
+..\app\app.c(71): warning:  #223-D: function "lora_send" declared implicitly
+  					lora_send(0, 0x0, SET_RELAY_NOTICE, &sys_ctrl.relay_state, 1);
+..\app\app.c: 8 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling main.c...
+..\User\main.c(8): warning:  #177-D: variable "task_dht11_stk" was declared but never referenced
+  static OS_STK task_dht11_stk[TASK_DHT11_STK_SIZE];
+..\User\main.c: 1 warning, 0 errors
 compiling bsp.c...
 ..\bsp\bsp.c(7): warning:  #188-D: enumerated type mixed with another type
   	GPIO_WriteBit(
 PIOB, 
-PIO_Pin_5, !state);
+PIO_Pin_5, state);
 ..\bsp\bsp.c(12): warning:  #188-D: enumerated type mixed with another type
   	GPIO_WriteBit(
 PIOA, 
-PIO_Pin_10, !state);
+PIO_Pin_10, state);
 ..\bsp\bsp.c(78): warning:  #68-D: integer conversion resulted in a change of sign
   	NVIC_InitStructure.NVIC_IRQChannel = SysTick_IRQn;  //ϵͳʱ???ж?
 ..\bsp\bsp.c: 3 warnings, 0 errors
+compiling ctrl.c...
+..\app\ctrl.c(21): warning:  #223-D: function "relay_ctrl" declared implicitly
+  				relay_ctrl(sys_ctrl.relay_state);
+..\app\ctrl.c(22): warning:  #223-D: function "led_ctrl" declared implicitly
+  				led_ctrl(sys_ctrl.relay_state);
+..\app\ctrl.c(23): warning:  #223-D: function "lora_send" declared implicitly
+  				lora_send(frame->port, 0x0, SET_RELAY_RESPONSE, &sys_ctrl.relay_state, 1);
+..\app\ctrl.c(8): warning:  #177-D: variable "key" was declared but never referenced
+  	int key;	
+..\app\ctrl.c(9): warning:  #177-D: variable "dat" was declared but never referenced
+  	uint8_t *dat;
+..\app\ctrl.c: 5 warnings, 0 errors
+compiling lora.c...
+..\app\lora.c(20): warning:  #223-D: function "SX1276SetTxPacket" declared implicitly
+  	SX1276SetTxPacket(buf, len+1);	
+..\app\lora.c(31): warning:  #223-D: function "SX1276Init" declared implicitly
+      SX1276Init();
+..\app\lora.c(32): warning:  #223-D: function "SX1276StartRx" declared implicitly
+      SX1276StartRx();	
+..\app\lora.c(36): warning:  #223-D: function "SX1276Process" declared implicitly
+          switch(SX1276Process()) {
+..\app\lora.c(40): warning:  #223-D: function "SX1276GetRxPacket" declared implicitly
+  			SX1276GetRxPacket(buf, &len);
+..\app\lora.c: 5 warnings, 0 errors
+compiling os_cpu_c.c...
+..\ucosii\Ports\os_cpu_c.c(373): warning:  #1-D: last line of file ends without a newline
+  	
+..\ucosii\Ports\os_cpu_c.c: 1 warning, 0 errors
+compiling os_dbg.c...
+compiling os_core.c...
+compiling os_mbox.c...
+compiling os_flag.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
 linking...
-Program Size: Code=31416 RO-data=728 RW-data=236 ZI-data=9108  
+Program Size: Code=31412 RO-data=728 RW-data=236 ZI-data=9108  
 FromELF: creating hex file...
 After Build - User command #1: C:\Keil\ARM\ARMCC\bin\fromelf.exe --bin --output ./output/lora.bin ./output/lora.axf
-".\Output\lora.axf" - 0 Error(s), 3 Warning(s).
+".\Output\lora.axf" - 0 Error(s), 23 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -61,7 +123,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

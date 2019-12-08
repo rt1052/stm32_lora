@@ -177,12 +177,12 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>frame-&gt;cmd</ItemText>
+          <ItemText>frame-&gt;len</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>frame-&gt;port</ItemText>
+          <ItemText>len</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
@@ -192,32 +192,32 @@
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>lora_buf[5]</ItemText>
+          <ItemText>lora_buf[1]</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>lora_buf[6]</ItemText>
+          <ItemText>lora_buf[2]</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>lora_buf[4]</ItemText>
+          <ItemText>lora_buf[3]</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>lora_buf[7]</ItemText>
+          <ItemText>lora_buf[4]</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>lora_buf[8]</ItemText>
+          <ItemText>lora_buf[5]</ItemText>
         </Ww>
         <Ww>
           <count>8</count>
           <WinNumber>1</WinNumber>
-          <ItemText>frame-&gt;dat[0]</ItemText>
+          <ItemText>lora_buf[6]</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
@@ -408,7 +408,7 @@
 
   <Group>
     <GroupName>stm32lib</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -632,7 +632,7 @@
 
   <Group>
     <GroupName>lora</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

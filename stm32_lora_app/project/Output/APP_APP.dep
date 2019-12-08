@@ -1,12 +1,12 @@
 Dependencies for Project 'APP', Target 'APP': (DO NOT MODIFY !)
-F (..\User\main.c)(0x5DEA7D77)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
-I (..\app\app.h)(0x5DE7A037)
+F (..\User\main.c)(0x5DEC67A7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (..\app\app.h)(0x5DEC67A7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 I (..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5C1F554E)
@@ -27,13 +27,13 @@ I (..\stm32lib\Libraries\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\stm32lib\Libraries\inc\misc.h)(0x4D783BB4)
 I (..\bsp\bsp.h)(0x5DEA7007)
 F (..\User\stm32f10x_it.c)(0x5D73BE33)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\stm32f10x_it.o --omf_browse .\output\stm32f10x_it.crf --depend .\output\stm32f10x_it.d)
-I (..\app\app.h)(0x5DE7A037)
+I (..\app\app.h)(0x5DEC67A7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 I (..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5C1F554E)
@@ -55,15 +55,15 @@ I (..\stm32lib\Libraries\inc\misc.h)(0x4D783BB4)
 F (..\User\stm32f10x_it.h)(0x50B08ADA)()
 F (..\User\stm32f10x_conf.h)(0x5DE90E31)()
 F (..\user\os_cfg.h)(0x50AE37A4)()
-F (..\user\app_cfg.h)(0x5D1A1CCB)()
-F (..\app\app.c)(0x5D73C614)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\app.o --omf_browse .\output\app.crf --depend .\output\app.d)
-I (..\app\app.h)(0x5DE7A037)
+F (..\user\app_cfg.h)(0x5DEC67A7)()
+F (..\app\app.c)(0x5DEC67A7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\app.o --omf_browse .\output\app.crf --depend .\output\app.d)
+I (..\app\app.h)(0x5DEC67A7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 I (..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5C1F554E)
@@ -82,15 +82,15 @@ I (..\stm32lib\Libraries\inc\stm32f10x_spi.h)(0x4D783BB4)
 I (..\stm32lib\Libraries\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\stm32lib\Libraries\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\stm32lib\Libraries\inc\misc.h)(0x4D783BB4)
-F (..\app\app.h)(0x5DE7A037)()
+F (..\app\app.h)(0x5DEC67A7)()
 F (..\app\ctrl.c)(0x5DE90DF8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\ctrl.o --omf_browse .\output\ctrl.crf --depend .\output\ctrl.d)
-I (..\app\app.h)(0x5DE7A037)
+I (..\app\app.h)(0x5DEC67A7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 I (..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5C1F554E)
@@ -131,15 +131,15 @@ I (..\stm32lib\Libraries\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\stm32lib\Libraries\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\stm32lib\Libraries\inc\misc.h)(0x4D783BB4)
 I (..\lora\radio.h)(0x5C1F8D47)
-I (..\app\app.h)(0x5DE7A037)
+I (..\app\app.h)(0x5DEC67A7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 I (..\bsp\bsp.h)(0x5DEA7007)
-F (..\bsp\bsp.c)(0x5DEB0974)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\bsp.o --omf_browse .\output\bsp.crf --depend .\output\bsp.d)
+F (..\bsp\bsp.c)(0x5DEC67A7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\bsp.o --omf_browse .\output\bsp.crf --depend .\output\bsp.d)
 I (..\bsp\bsp.h)(0x5DEA7007)
 I (..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5C1F554E)
 I (..\stm32lib\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4D523B58)
@@ -654,62 +654,62 @@ F (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)()
 F (..\ucosii\Ports\os_cpu_a.asm)(0x50AF8494)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list .\list\os_cpu_a.lst --xref -o .\output\os_cpu_a.o --depend .\output\os_cpu_a.d)
 F (..\ucosii\Ports\os_cpu_c.c)(0x54B72BAC)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_cpu_c.o --omf_browse .\output\os_cpu_c.crf --depend .\output\os_cpu_c.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Ports\os_dbg.c)(0x483F2546)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_dbg.o --omf_browse .\output\os_dbg.crf --depend .\output\os_dbg.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_core.c)(0x54C348EE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_core.o --omf_browse .\output\os_core.crf --depend .\output\os_core.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_flag.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_flag.o --omf_browse .\output\os_flag.crf --depend .\output\os_flag.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_mbox.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_mbox.o --omf_browse .\output\os_mbox.crf --depend .\output\os_mbox.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_mem.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_mem.o --omf_browse .\output\os_mem.crf --depend .\output\os_mem.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_mutex.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_mutex.o --omf_browse .\output\os_mutex.crf --depend .\output\os_mutex.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_q.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_q.o --omf_browse .\output\os_q.crf --depend .\output\os_q.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_sem.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_sem.o --omf_browse .\output\os_sem.crf --depend .\output\os_sem.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_task.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_task.o --omf_browse .\output\os_task.crf --depend .\output\os_task.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_time.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_time.o --omf_browse .\output\os_time.crf --depend .\output\os_time.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\os_tmr.c)(0x486309CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\User -I ..\app -I ..\bsp -I ..\stm32lib\Libraries\inc -I ..\stm32lib\CMSIS\CM3\CoreSupport -I ..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\lora -I ..\ucosii\Ports -I ..\ucosii\Source-ID:\code\stm32f103c8t6\stm32_lora\stm32_lora_app\project\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\output\os_tmr.o --omf_browse .\output\os_tmr.crf --depend .\output\os_tmr.d)
 I (..\ucosii\Source\ucos_ii.h)(0x486309CE)
-I (..\User\app_cfg.h)(0x5D1A1CCB)
+I (..\User\app_cfg.h)(0x5DEC67A7)
 I (..\User\os_cfg.h)(0x50AE37A4)
 I (..\ucosii\Ports\os_cpu.h)(0x50AF48C8)
 F (..\ucosii\Source\ucos_ii.h)(0x486309CE)()

@@ -4,12 +4,12 @@
 void relay_ctrl(bool state)
 {
 	/* 0表示开灯，1表示关灯 */
-	GPIO_WriteBit(GPIOB, GPIO_Pin_5, !state);
+	GPIO_WriteBit(GPIOB, GPIO_Pin_5, state);
 }
 
 void led_ctrl(bool state)
 {
-	GPIO_WriteBit(GPIOA, GPIO_Pin_10, !state);
+	GPIO_WriteBit(GPIOA, GPIO_Pin_10, state);
 }
 
 bool key_get(void)

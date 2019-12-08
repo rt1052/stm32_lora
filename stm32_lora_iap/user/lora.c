@@ -65,12 +65,15 @@ frame_t *lora_recv(void)
 			frame_t *frame = (frame_t *)buf;
 			if (frame->head == 0x42
 				&& frame->len == len
-				&& buf[len] == check_sum(buf, len)
-				&& frame->id == sys.param.id) {
-
-				return frame;
-			} else {
-				return NULL;
+				&& buf[len] == check_sum(buf, len)) {
+					
+				if (frame->id == sys.param.id) {
+					return frame;
+				} else {
+					/* 等待其它设备命令 */
+					delay_ms(1000);
+					return NULL;
+				}
 			}
 		}
 		delay_ms(10);

@@ -19,7 +19,7 @@ bool key_get(void)
 void relay_ctrl(bool state)
 {
 	/* 0表示打开，1表示关闭 */
-	GPIO_WriteBit(relay.port, relay.pin, !state);
+	GPIO_WriteBit(relay.port, relay.pin, state);
 }
 
 void gpio_init(void)

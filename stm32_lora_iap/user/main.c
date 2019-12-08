@@ -111,7 +111,7 @@ void update_app(void)
     		case GET_RELAY_REQUEST:
     			/* oxff表示需要更新 */
     			uint8_t state = 0xff;
-    			lora_send(sys.port, sys.param.id, GET_RELAY_RESPONSE, &state, 1);
+    			lora_send(frame->port, sys.param.id, GET_RELAY_RESPONSE, &state, 1);
     			break;
 			}
     	} else {
@@ -129,7 +129,7 @@ int main(void)
 	/* 首次烧录 */
 #if 0
 	sys.param.update = true;
-	sys.param.id = 1;
+	sys.param.id = 4;
 	flash_set_param(&sys.param);
 #endif
 
@@ -143,7 +143,8 @@ int main(void)
 	
 	bsp_init();
 	/* 关闭继电器 */
-	relay_ctrl(1);
+	relay_ctrl(0);
+	led_ctrl(0);
 	lora_init();
 	
 	update_app();

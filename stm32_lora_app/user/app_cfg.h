@@ -49,7 +49,7 @@
 #define  TASK_LORA_PRIO                    7
 #define  TASK_CTRL_PRIO                    8
 #define  TASK_IR_PRIO                      10
-#define  TASK_LED_PRIO                     11
+#define  TASK_KEY_PRIO                     11
 
 #define  TASK_PROBE_STR_PRIO               12
 
@@ -63,7 +63,7 @@
 
 
 #define  TASK_START_STK_SIZE              64
-#define  TASK_LED_STK_SIZE                128
+#define  TASK_KEY_STK_SIZE                128
 #define  TASK_LORA_STK_SIZE               128
 #define  TASK_CTRL_STK_SIZE               128
 #define  TASK_DHT11_STK_SIZE              128
